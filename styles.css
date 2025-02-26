@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #f5f2f0;
+}
+
+header{
+    z-index:10000;  
+    animation: bootingUpSite 0.5s ease-in-out forwards;
+
+
+    padding:1%;
+    background-color:black;
+    width:100vw;
+    top:0;
+    left:0;
+    position: fixed;
+}
+
+nav a{
+    font-family:Chivo;
+    font-size: clamp(1rem, 1.5vw, 2.15rem);
+
+    text-decoration: none;
+
+    border-right: 1px solid white;
+
+    padding-right: calc(2.25% - clamp(1rem, 1.5vw, 2.15rem));
+    color:white;
+}
+
+nav a:nth-child(4){
+    cursor:auto;
+    padding-left: 70vw;
+    border-right:none
+}
+
+nav a:nth-child(5){
+    padding-left:0.5%;
+    border-right:0;
+    border-left: 1px solid white;
+}
+
+nav a:nth-child(3){
+    border-right:none;
+}
+
+nav a:hover:not(#IGNORE){
+    background-color:#3e3c3b;
+    color:white;
+}
+
+.page{
+    position:relative;
+    left:5%;
+    width:90%;
+
+    z-index:-1;
+    animation: bootingUpSite 0.7s ease-in-out forwards;
+    height:100vh;
+}
+
+#home{
+    display:flex;
+    flex-direction: column;
+    background-color: #ebeaea;
+}
+
+#home img {
+    position:relative;
+    left:35%;
+    top:clamp(100px, 25%, 35%);
+    width: 500px;
+    height: 500px;
+
+    animation:bootingUpSite cubic-bezier(0.175, 0.885, 0.32, 1.275) ease-in-out forwards
+}
+
+#company_info{
+    
+}
+
+#product{
+    
+}
+
+@keyframes bootingUpSite{
+    from{opacity:0}
+    to{opacity:1}
+}
