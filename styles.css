@@ -9,8 +9,8 @@ body{
 }
 
 header{
-    z-index:10000;  
-    animation: bootingUpSite 0.5s ease-in-out forwards;
+    z-index:2;  
+    animation: opacityUp 0.5s ease-in-out forwards;
 
 
     padding:1%;
@@ -19,6 +19,7 @@ header{
     top:0;
     left:0;
     position: fixed;
+    height:clamp(2%,35px,50px);
 }
 
 nav a{
@@ -36,7 +37,7 @@ nav a{
 nav a:nth-child(4){
     cursor:auto;
     padding-left: 70vw;
-    border-right:none
+    border-right:none;
 }
 
 nav a:nth-child(5){
@@ -59,36 +60,140 @@ nav a:hover:not(#IGNORE){
     left:5%;
     width:90%;
 
-    z-index:-1;
-    animation: bootingUpSite 0.7s ease-in-out forwards;
+    z-index:1;
+    animation: opacityUp 0.7s ease-in-out forwards;
     height:100vh;
+    top:clamp(2%,35px,50px);
 }
 
 #home{
-    display:flex;
-    flex-direction: column;
     background-color: #ebeaea;
 }
 
+#home h1,h2{
+    text-shadow: -1px -1px 0 #fffefe, 1px -1px 0 #fffefe, -1px 1px 0 #fffefe, 1px 1px 0 #fffefe;
+
+    font-family:Chivo;
+    position:absolute;
+}
+
 #home img {
+    z-index: 5;
+    pointer-events: all;
+
+    transform: scale(1);
+    transition: transform 0.25s ease-in-out;
     position:relative;
     left:35%;
     top:clamp(100px, 25%, 35%);
     width: 500px;
     height: 500px;
 
-    animation:bootingUpSite cubic-bezier(0.175, 0.885, 0.32, 1.275) ease-in-out forwards
+    animation:opacityUp cubic-bezier(0.175, 0.885, 0.32, 1.275) ease-in-out forwards
+}
+
+#home img:hover{
+    transform: scale(1.25);
 }
 
 #company_info{
-    
+    background-color: #ebeaea;
 }
 
 #product{
-    
+    top:0;
+    background-color: #e7e7e7;
 }
 
-@keyframes bootingUpSite{
+
+.horizontal_layout{
+    position:relative;
+    font-family:Chivo;
+    display:flex;
+    flex-direction: row;
+}
+
+.column{
+    text-align: center;
+
+    margin-top:5%;
+    flex:1;
+    flex-direction:column;
+}
+
+.column p{
+    font-size: clamp(16px,1.2rem,1.65rem);
+    padding:2%;
+    margin:5%;
+    background-color: #e0dddd;
+}
+
+.column button{
+    padding: 2%;
+    font-family: Chivo;
+    font-size: clamp(8px,1.25rem,2rem);
+    border: 1px solid black;
+    background-color: #e9e9e8;
+    transition: all 0.25s ease-in-out;
+}
+
+.column button:hover{
+    background-color:#f4f4f4;
+}
+
+.hidden{
+    animation: opacityDown 0.25s ease-in-out forwards;
+}
+
+.showed{
+    animation: opacityUp 0.25s ease-in-out forwards;
+}
+
+.type-write-effect{
+    display: inline-block;
+    border-right: 5px solid;
+    width:100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: .4s step-end infinite alternate;
+}
+
+footer{
+    line-height:0;
+    padding:0;
+    z-index:2;  
+    position:fixed;
+
+    background-color:black;
+    width:100%;
+    bottom:0;
+    left:0;
+    height:40px;
+
+}
+
+@keyframes opacityUp{
     from{opacity:0}
     to{opacity:1}
+}
+
+@keyframes opacityDown{
+    from{opacity:1}
+    to{opacity:0}
+}
+
+@keyframes cursor{
+    50%{border-color:transparent;}
+}
+
+@keyframes type{
+    from{width:0;}
+    to{width:35%;}
+
+    99%{
+        border-right: 5px solid;
+    }
+    100%{
+        border-right:0;
+    }
 }

@@ -10,25 +10,81 @@
     <header>
         <nav>
             <a href="#home">Home</a>
-            <a href="#company_info">Info</a>
             <a href="#product">Products</a>
+            <a href="#company_info">Info</a>
             <a id ="IGNORE"></a>
             <a href="signup.html">Sign Up</a>
         </nav>
-    </header>
+    </header> 
 
     <div class="page" id="home">
+        <h1 style="top:15%; left:34%;">The #1 Banana Selling Company!</h1>
         <img src="Images/Company_Logo.png" id="logo">
-        <p>Hello i have a big penis</p>
-    </div>
-
-    <div class="page" id="company_info">
-
+        <h2 style="left:28%; top:75%; font-size:clamp(12px, 2rem, 2.5rem)">We're more than just banana's, we're the future.</h2> 
     </div>
 
     <div class="page" id="product">
+        <h1 style="margin:0; font-family:Chivo; text-align: center; font-size:clamp(20px, 2.5rem, 3rem)" >Our Delicious, Yellow Bananas!</h1>
+        <div class="horizontal_layout">
+            <div class="column" style="flex:0.75">
+                <h1 id= "pd_banana">Gucci Banana</h1>
+                <br>
+                <img src="Images/gucci_banana.png" style="margin-top:15%; width:80%; height:auto; margin-left:0%;">
+            </div>
 
+            <div class="column" style="flex:1.25">
+                <h1 id= "pd_info">Product Information</h1>
+                <p style="margin-top:4%;">Meet our delicious, creamilicious, yummilicious bananas! 
+                    <br> <br>
+                    Yellow Moon proudly presents Gucci Bananas – a luxurious and indulgent fruit that sets a new standard in banana quality. These bananas are not just high-quality; they’re a treat for the senses! With a unique balance of flavor, texture, and nutritional benefits, Gucci Bananas by Yellow Moon redefine what a banana should be. Such key features include!
+                </p>
+
+                <ul style="text-align: center; list-style-position: inside;">
+                    <li style="font-size: clamp(16px,1.2rem,1.65rem);">High Quality!</li>
+                    <li style="font-size: clamp(16px,1.2rem,1.65rem);">Nutrient Rich!</li>
+                    <li style="font-size: clamp(16px,1.2rem,1.65rem);">Delicate and Creamy Texture!</li>
+                    <li style="font-size: clamp(16px,1.2rem,1.65rem);">Yummylicious Flavor!</li>
+                    <li style="font-size: clamp(16px,1.2rem,1.65rem);">Pure Grown!</li>
+                </ul>
+
+                <p>There is simply no other banana like this in the market. Our Gucci Bananas combine the ideal texture with a burst of flavors that will leave your taste buds craving more. From breakfast to snacks or even desserts, these bananas are the perfect choice for anyone seeking a top-tier fruit experience. With their creamy taste and delicate touch, they offer the ultimate banana experience.</p>
+
+
+                <h2>Don't be Cringe. Taste The Banana, be the Banana. Taste Perfection With Every Bite. Taste Me, Taste Yellow Moon.</h2>
+            </div>
+        </div>
     </div>
+
+
+    <div class="page" id="company_info">
+        <h1 style="margin:0; font-family:Chivo; text-align: center; font-size:clamp(20px, 2.5rem, 3rem)">Who are Yellow Moon?</h1>
+        <div class="horizontal_layout">
+            <div class="column">
+                <h1>About Us</h1>
+                <p>Yellow Moon, founded by the worst CEO, Marcus Timothy T. Ureta. The great Marcus always strives to deliver such perfect quality, fresh, high quality bananas. It is his life motto, delicious bananas, he was born banana, and now he will become Banana...</p>
+
+                <button onclick="showMore_AU()" id="AU_button">There's More to Learn...</button>
+
+                <p class="hidden" id="aboutus_show">Marcus, a connoisseur in his art, developed this company with his bare banana hands. Do you want a taste? Then come along and buy some bananas. Because as you see Marcus is a master entrepreneur, a local businessman is what he is, an inspiring one at that! </p>
+            </div>
+            <div class="column">
+                <h1>Our Journey</h1>
+                <p id="journey_Text" style="height:325px;">The journey of Yellow Moon is an inspiring one, shows grit amongst all else. Yellow Moon was a humble start-up business, born from the ground up. The founder had to bash through dumpsters and all sorts of hardships to get the business even up, that was until one faithful day. This faithful day brought upon the most wonderful day of his life, the success. Yellow Moon all of a sudden FLOURISHED into success. Yellow Moon was offered a deal by Microsoft for $2.25B dollars, since then the company has been flourishing since then, but there's more to the story! Find out more by clicking on the button! I'm sure you'd want to learn more about our company.</p>
+                <button onclick="changeText()" id="journey_button">Click for Page 2</button><br>
+                <img src="Images/Company_Logo.png" style="width:300px;height:300px;">
+            </div>
+            <div class="column">
+                <h1>Our Bananas</h1>
+                <p>As you see, our bananas are very high quality. Rich in protein, potassium, and in vitamin c. However Yellow Moon's bananas are very yummy and delicate at the touch! Creamy in flavor, yet rich in the aftertaste, that is what Yellow Moon strives for, perfection in bananas. There is no other bananas like this in the market, so give Yellow Moon a try and taste our creamilicous, yummylicious tasty bananas!</p>
+                <img src="Images/banana.png">
+                <h2 style="position:absolute; right:11%; color:yellow; text-shadow: -1px -1px 0 hsl(0, 0%, 0%), 1px -1px 0 hsl(0, 0%, 0%), -1px 1px 0 hsl(0, 0%, 0%), 1px 1px 0 hsl(0, 0%, 0%);">Tasty Banana!</h2>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h2>Yellow Moon. Have any issues with our products? Contact us at +63 990-553-3333</h2>
+    </footer>
 
     <!-- Script Source-->
      <script src="script.js"></script>
