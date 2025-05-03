@@ -5,7 +5,7 @@ html{
 }
 
 body{
-    background-color: #f5f2f0;
+    background-color: #91b492;
 }
 
 header{
@@ -14,7 +14,7 @@ header{
 
 
     padding:1%;
-    background-color:black;
+    background-color:#0f3936;
     width:100vw;
     top:0;
     left:0;
@@ -34,19 +34,19 @@ nav a{
     color:white;
 }
 
-nav a:nth-child(4){
+nav a:nth-child(5){
     cursor:auto;
-    padding-left: 70vw;
+    padding-left: 67vw;
     border-right:none;
 }
 
-nav a:nth-child(5){
+nav a:nth-child(6){
     padding-left:0.5%;
     border-right:0;
     border-left: 1px solid white;
 }
 
-nav a:nth-child(3){
+nav a:nth-child(4){
     border-right:none;
 }
 
@@ -67,11 +67,12 @@ nav a:hover:not(#IGNORE){
 }
 
 #home{
-    background-color: #ebeaea;
+    background-color: #c8e0b8;
 }
 
-#home h1,h2{
-    text-shadow: -1px -1px 0 #fffefe, 1px -1px 0 #fffefe, -1px 1px 0 #fffefe, 1px 1px 0 #fffefe;
+#home h1,h2, #playtest h1{
+    color:#dbfdc5;
+    text-shadow: -1px -2px 0 #384132, 2px -1px 0 #384132, -1px 2px 0 #384132, 2px 2px 0 #384132;
 
     font-family:Chivo;
     position:absolute;
@@ -97,12 +98,12 @@ nav a:hover:not(#IGNORE){
 }
 
 #company_info{
-    background-color: #ebeaea;
+    background-color: #c8e0b8;
 }
 
-#product{
+#product, #playtest{
     top:0;
-    background-color: #e7e7e7;
+    background-color: #b7cca8;
 }
 
 
@@ -125,20 +126,22 @@ nav a:hover:not(#IGNORE){
     font-size: clamp(16px,1.2rem,1.65rem);
     padding:2%;
     margin:5%;
-    background-color: #e0dddd;
+    background-color: #519056;
+    color:white;
 }
 
-.column button{
+.column button, #playtest button{
     padding: 2%;
     font-family: Chivo;
     font-size: clamp(8px,1.25rem,2rem);
     border: 1px solid black;
-    background-color: #e9e9e8;
+    color:white;
+    background-color: #75974c;
     transition: all 0.25s ease-in-out;
 }
 
-.column button:hover{
-    background-color:#f4f4f4;
+.column button:hover, #playtest button:hover{
+    background-color: #5a743a;
 }
 
 .hidden{
@@ -164,7 +167,7 @@ footer{
     z-index:2;  
     position:fixed;
 
-    background-color:black;
+    background-color:#0f3936;
     width:100%;
     bottom:0;
     left:0;

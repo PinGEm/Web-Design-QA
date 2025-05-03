@@ -31,12 +31,12 @@ function changeText(){
     if(pageTwo == false){
         pageTwo = true;
         j_button.innerHTML = "Show Page 1";
-        document.getElementById('journey_Text').innerHTML = "After Microsoft offered $2.25B for Yellow Moon, the company only grew from there. The notoriety of our delicate, very yellow bananas sparked joy and wonders to those who came across and take a bite out of it! It was there the joy of eating bananas came to life. From there onwards, joy was created. And there onwards peace and love was inspired by our bananas. And that is Yellow Moon's humble journey. A humble start up that blossomed into a journey riches of bananas.";
+        document.getElementById('journey_Text').innerHTML = "Like any game development journey, RootTicker wasn’t without its obstacles. The team ran into their fair share of bugs, balancing issues, and scope creep as they experimented with new mechanics. But they pushed through, believing in the potential of their project. Every challenge they faced only strengthened their resolve to create something truly special. However, after months of hard work, we're now ready to present the game!";
     }
     else{
         pageTwo = false;
         j_button.innerHTML = "Show Page 2";
-        document.getElementById('journey_Text').innerHTML = "The journey of Yellow Moon is an inspiring one, shows grit amongst all else. Yellow Moon was a humble start-up business, born from the ground up. The founder had to bash through dumpsters and all sorts of hardships to get the business even up, that was until one faithful day. This faithful day brought upon the most wonderful day of his life, the success. Yellow Moon all of a sudden FLOURISHED into success. Yellow Moon was offered a deal by Microsoft for $2.25B dollars, since then the company has been flourishing since then, but there's more to the story! Find out more by clicking on the button! I'm sure you'd want to learn more about our company.";
+        document.getElementById('journey_Text').innerHTML = "It all began with a spark—an idea that bloomed during a late-night brainstorming session at Root Studios. Founded by a group of passionate gamers and industry veterans, Root Studios started with a singular mission: to craft unique, fun, and addictive games that brought joy to players around the world. This game is the one you're on right now actually, RootTicker! With the concept set, the team at Root Studios got to work. The design phase was exciting, but also challenging. As with any clicker game, the team knew they needed to strike the right balance between simplicity and complexity. Find out more by clicking on the button! I'm sure you'd want to learn more about our company.";
     }
 }
 
@@ -47,7 +47,7 @@ function signUp(){
         window.alert('ERROR! : Please input a valid email in order to proceed');
         return;
     }
-    window.alert('You have signed up to Yellow Moon! Please check your email: ' + email_input + " for further confirmation!");
+    window.alert('You have signed up to RootStudios! Please check your email: ' + email_input + " for further confirmation!");
     console.log('user has signed up');
 }
 
@@ -70,4 +70,9 @@ function checkVisible(elm) {
   var rect = elm.getBoundingClientRect();
   var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
   return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+}
+
+function PlayGame(){
+    // open site
+    window.open("https://pingem.itch.io/roottap")
 }
